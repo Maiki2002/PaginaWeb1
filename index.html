@@ -44,63 +44,104 @@
     </section>
     
     <div class="certificados">
+        <p></p>
         <img src="img/" alt="certificado 1">
         <img src="img/" alt="certificado 2">
         <img src="img/" alt="certificado 3">
         <img src="img/" alt="certificado 4">
         <img src="img/" alt="certificado 5">
     </div>
+    
     <section id="productos">
         <div class="productos-titulo">
-            <h2>Productos</h2>
+            <h2>Catálogo de Productos</h2>
         </div>
-        <div class="tarjeta">
-            <img src="img/4DryField.webp">
-            <div class="tarjeta-contenido">
-                <h3>4DryField® PH</h3>
-                <p>4DryField PH es un polvo quirúrgico estéril multifuncional compuesto de polímeros de celulosa
-                   modificada al 100%. Está diseñado para proporcionar una solución segura y eficaz para dos aplicaciones
-                   clave en cirugía: el control de la hemostasia (detener el sangrado) y la prevención de adherencias
-                   postquirúrgicas.</p>
-            </div>
-        </div>
-
-        <div class="productos-lista">
-            <div class="producto">
-                <h3>HYAcorp Endogel</h3>
-                <p>HYAcorp Endo Gel es un gel biodegradable, estéril, transparente y de alta viscosidad,
-                    desarrollado a partir de ácido hialurónico especialmente diseñado. Este componente esencial 
-                    del tejido conectivo humano proporciona una solución avanzada para la creación de una barrera anti-adherencia
-                    efectiva durante procedimientos quirúrgicos.</p>
-            </div>
-            <div class="producto">
-                <h3>Cingal</h3>
-                <p>Cingal es un tratamiento revolucionario que combina ácido hialurónico (AH) reticulado de alto peso 
-                   molecular y un corticosteroide en una sola inyección. Esta fórmula única está diseñada para aliviar 
-                   el dolor asociado con la osteoartritis de manera inmediata y prolongada, mejorando la calidad de vida de 
-                   los pacientes.</p>
-            </div>
-            <div class="producto">
-                <h3>ExFuse</h3>
-                <p>ExFuse es una matriz ósea avanzada que combina matriz ósea desmineralizada (DBM) con hueso esponjoso,
-                   diseñada para estimular la proliferación de células mesenquimales y promover la diferenciación de osteocitos.
-                   Este innovador material ayuda a fomentar el crecimiento y la regeneración del hueso normal, convirtiéndose
-                   en una solución ideal para procedimientos quirúrgicos de reparación y regeneración ósea.</p>
-            </div>
-            <div class="producto">
-                <h3>DynaMesh®-ENDOLAP</h3>
-                <p>DynaMesh®-ENDOLAP es una malla quirúrgica avanzada diseñada específicamente para procedimientos de hernia 
-                    laparoscópica y mínimamente invasiva. Es reconocida por su diseño innovador, materiales de alta calidad y excelente
-                    integración con los tejidos, lo que la convierte en una solución líder en el campo de la cirugía de hernia</p>
-            </div>
-            <div class="producto">
-                <h3>DynaMesh®-IPOM</h3>
-                <p>Los implantes DynaMesh®-IPOM y DynaMesh®-IPOM visible están diseñados para el tratamiento quirúrgico de hernias
-                   epigástricas, umbilicales, incisionales y parastomales tras cirugías de ostomía. Estas mallas de última generación
-                   refuerzan y reparan de forma permanente los tejidos blandos de la pared abdominal en áreas con defectos,
-                   ofreciendo una solución eficaz y duradera para una amplia variedad de condiciones.</p>
-            </div>
-        </div>
+        <ul class="cards">
+            <li>
+                <a class="card">
+                    <img src="img/4DryField.webp" class="card__image" alt="4DryField PH" />
+                    <div class="card__overlay">
+                        <div class="card__header">                    
+                            <div class="card__header-text">
+                                <h3 class="card__title">4DryField® PH</h3>            
+                                <span class="card__status">Hemostático y Barrera anti-adherencia</span>
+                            </div>
+                        </div>
+                        <p class="card__description">Polvo quirúrgico estéril multifuncional para control de hemostasia y prevención de adherencias postquirúrgicas.</p>
+                    </div>
+                </a>      
+            </li>
+            <li>
+                <a class="card">
+                    <img src="img/Hyacorp Endogel.jpg" class="card__image" alt="HYAcorp Endo Gel" />
+                    <div class="card__overlay">        
+                        <div class="card__header">                 
+                            <div class="card__header-text">
+                                <h3 class="card__title">HYAcorp Endo Gel</h3>
+                                <span class="card__status">Barrera anti-adherencia</span>
+                            </div>
+                        </div>
+                        <p class="card__description">Gel biodegradable de ácido hialurónico diseñado para crear una barrera efectiva durante cirugías.</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="card">
+                    <img src="img/Cingal.jpg" class="card__image" alt="Cingal" />
+                    <div class="card__overlay">
+                        <div class="card__header">                  
+                            <div class="card__header-text">
+                                <h3 class="card__title">Cingal</h3>
+                                <span class="card__status">Tratamiento de Osteoartritis</span>            
+                            </div>
+                        </div>
+                        <p class="card__description">Inyección de ácido hialurónico con corticosteroide para el tratamiento del dolor de osteoartritis.</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="card">
+                    <img src="img/Exfuse (1).webp" class="card__image" alt="ExFuse" />
+                    <div class="card__overlay">
+                        <div class="card__header">                
+                            <div class="card__header-text">
+                                <h3 class="card__title">ExFuse</h3>
+                                <span class="card__status">Regeneración ósea</span>
+                            </div>          
+                        </div>
+                        <p class="card__description">Matriz ósea avanzada que estimula la proliferación celular y promueve la regeneración del tejido óseo.</p>
+                    </div>
+                </a>
+            </li>    
+            <li>
+                <a class="card">
+                    <img src="img/endolalp.jpeg" class="card__image" alt="DynaMesh®-ENDOLAP" />
+                    <div class="card__overlay">
+                        <div class="card__header">              
+                            <div class="card__header-text">
+                                <h3 class="card__title">DynaMesh®-ENDOLAP</h3>
+                                <span class="card__status">Tratamiento de hernias</span>
+                            </div>          
+                        </div>
+                        <p class="card__description">Malla para procedimientos laparoscópicos de hernia, con integración óptima en tejidos.</p>
+                    </div>
+                </a>
+            </li>    
+            <li>
+                <a class="card">
+                    <img src="img/ipom.jpg" class="card__image" alt="DynaMesh®-IPOM" />
+                    <div class="card__overlay">
+                        <div class="card__header">               
+                            <div class="card__header-text">
+                                <h3 class="card__title">DynaMesh®-IPOM</h3>
+                                <span class="card__status">Tratamiento de hernias</span>
+                            </div>          
+                        </div>
+                        <p class="card__description">Implantes avanzados para el tratamiento quirúrgico de hernias epigástricas y umbilicales.</p>
+                    </div>
+                </a>
+            </li>    
+        </ul>
     </section>
 
     <section id="contacto">

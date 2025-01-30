@@ -17,7 +17,7 @@ header {
     justify-content: space-between;
     padding: 8px 30px;
     background-color: #ffffff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra para dar un poco de profundidad */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
     z-index: 1000;
 }
 
@@ -108,3 +108,102 @@ header nav a:hover {
     text-align: center;
     color: rgb(46, 46, 46);
 }
+
+:root {
+  --surface-color: #fff;
+  --curve: 40;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 4rem 13vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  position: relative;
+  display: block;
+  width: 320px; 
+  height: 350px; 
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 10px 30px 5px rgba(106, 106, 106, 0.128);
+}
+
+.card__image {      
+  width: 100%;
+  height: 100%;
+  object-fit:cover; 
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;      
+  border-radius: calc(var(--curve) * 1px);    
+  background-color: white;      
+  transform: translateY(100%);
+  transition: .2s ease-in-out;
+  height: 70%; 
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5em;
+  padding: 1.2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;    
+  background-color: rgb(255, 255, 255);
+  transform: translateY(-100%);
+  transition: .2s ease-in-out;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;      
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: var(--surface-color);
+}
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__title {
+  font-size: 1.2em;
+  margin: 0;
+  color: #12b1dc;
+}
+
+.card__status {
+  font-size: 0.9em;
+  color: #1ebc2c;
+}
+
+.card__description {
+  padding: 1em;
+  color: #000000;
+  font-size: 1em;
+  line-height: 1.4;
+  max-height: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
