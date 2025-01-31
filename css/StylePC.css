@@ -207,3 +207,9 @@ header nav a:hover {
   text-overflow: ellipsis; 
 }
 
+.contacto-titulo{
+    font-family: 'Outfit', sans-serif;
+    font-size: 27px;
+    text-align: center;
+    color: rgb(46, 46, 46);
+}
