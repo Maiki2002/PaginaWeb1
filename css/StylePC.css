@@ -213,3 +213,66 @@ header nav a:hover {
     text-align: center;
     color: rgb(46, 46, 46);
 }
+
+#contacto {
+  background: #f8f9fa;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.contacto-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1150px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.contacto-bloque {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+}
+
+.contacto-bloque img {
+  width: 30px;
+  height: 30px;
+}
+
+.contacto-info h3 {
+  font-size: 22px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.contacto-info p, .contacto-info a {
+  font-size: 18px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.contacto-info a {
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.contacto-info a:hover {
+  color: #28cf26;
+}
+
+.direccion p {
+  font-size: 18px;
+  color: #000000;
+}
+
+.mapa iframe {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
