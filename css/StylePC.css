@@ -73,7 +73,10 @@ header nav a:hover {
   font-size: 39px;
   font-weight: bolder;
   color: rgb(0, 0, 0);
+  text-align: center;
   margin: 0px 70px 50px 20px;
+  -webkit-animation: resumen 2.0s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: resumen 2.0s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 .resumen p {
@@ -86,19 +89,95 @@ header nav a:hover {
   color: #000000;
   line-height: 1.4;
   margin: 0px 20px 20px 20px;
+  -webkit-animation: resumen-p 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
+	        animation: resumen-p 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both; 
+}
+
+@-webkit-keyframes resumen {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
+  40% {
+  }
+  100% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+}
+@keyframes resumen {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
+  40% {
+
+  }
+  100% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+}
+
+@-webkit-keyframes resumen-p {
+
+  0% {
+    -webkit-filter: blur(0.01);
+            filter: blur(0.01);
+  }
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+            filter: blur(12px) opacity(0%);
+  }
+}
+@keyframes resumen-p {
+  0% {
+    -webkit-filter: blur(0.01);
+            filter: blur(0.01);
+  }
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+            filter: blur(12px) opacity(0%);
+  }
 }
 
 .video-inicio {
   width: 50%;
   height: 800px;
   overflow: hidden;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .video-inicio video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  -webkit-animation: video 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
+	        animation: video 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both; 
+}
+
+@-webkit-keyframes video{
+
+  0% {
+    -webkit-filter: blur(0.01);
+            filter: blur(0.01);
+  }
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+            filter: blur(12px) opacity(0%);
+  }
+}
+@keyframes video {
+  0% {
+    -webkit-filter: blur(0.01);
+            filter: blur(0.01);
+  }
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+            filter: blur(12px) opacity(0%);
+  }
 }
 
 .productos-titulo {
